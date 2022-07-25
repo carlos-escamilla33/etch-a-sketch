@@ -1,8 +1,9 @@
 const gameContainer = document.querySelector("#game-container");
 
-
-const game = () => {
-    createGrid(16, 16);
+const onHover = (event) => {
+    if (event.target.className == "square") {
+        console.log(event.target);
+    }
 }
 
 const createGrid = (rows, cols) => {
@@ -13,7 +14,13 @@ const createGrid = (rows, cols) => {
         square.classList.add("square");
         square.textContent = (i + 1);
         gameContainer.append(square);
+        square.addEventListener("mouseover", onHover);
     }
+}
+
+
+const game = () => {
+    createGrid(16, 16);
 }
 
 game();
