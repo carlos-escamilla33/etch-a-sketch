@@ -1,4 +1,5 @@
 const gameContainer = document.querySelector("#game-container");
+const gridSizeBtn = document.querySelector("#btn");
 
 const onHover = (event) => {
     const gridSquare = event.target;
