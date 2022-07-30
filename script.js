@@ -2,9 +2,9 @@ const gameContainer = document.querySelector("#game-container");
 
 const onHover = (event) => {
     if (event.target.className == "square") {
-        console.log(event.target);
-    }
-}
+        event.target.style.backgroundColor = "yellow";
+    };
+};
 
 const createGrid = (rows, cols) => {
     gameContainer.style.setProperty("--grid-rows", rows);
@@ -15,12 +15,12 @@ const createGrid = (rows, cols) => {
         square.textContent = (i + 1);
         gameContainer.append(square);
         square.addEventListener("mouseover", onHover);
-    }
-}
+    };
+};
 
 
 const game = () => {
     createGrid(16, 16);
-}
+};
 
 game();

@@ -23,7 +23,3 @@ body {
     border: 1px black solid;
     text-align:center;
 }
-
-square:hover {
-    background-color: "yellow";
-}
