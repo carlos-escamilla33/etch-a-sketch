@@ -18,8 +18,10 @@ body {
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-columns), 1fr);
     height: 50vh;
+    cursor: pointer;
 }
 .square {
     border: 1px black solid;
     text-align:center;
+    width: 30px;
 }
