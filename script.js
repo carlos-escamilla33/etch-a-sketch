@@ -2,9 +2,9 @@ const gameContainer = document.querySelector("#game-container");
 const gridSizeBtn = document.querySelector("#btn");
 
 const onDrag = (event) => {
-    const gridSquare = event.target;
-    if (gridSquare.className == "square") {
-        gridSquare.style.backgroundColor = "yellow";
+    const gridSquare = document.querySelector(".square");
+    if (event.target.className == "square") {
+        event.target.style.backgroundColor = "yellow";
     };
 };
 
@@ -24,11 +24,11 @@ const resizeGrid = () => {
     let rows = parseInt(prompt("Enter number of rows: "));
     let columns = parseInt(prompt("Enter number of columns"));
 
-    createGrid(rows, columns);
+    createGrid(50, 50);
 };
 
 const game = () => {
-    gridSizeBtn.addEventListener("click", resizeGrid);
+    createGrid(50, 50);
 };
 
 game();
