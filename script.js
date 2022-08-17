@@ -1,5 +1,5 @@
 const gameContainer = document.querySelector("#game-container");
-const gridSizeBtn = document.querySelector("#btn");
+const gridSizeBtns = document.querySelectorAll(".btn");
 
 const onHover = (event) => {
     if (event.target.className == "square") {
@@ -18,12 +18,12 @@ const createGrid = (rows=16, cols=16) => {
     };
 };
 
-const resizeGrid = () => {
-
+const resizeGrid = (event) => {
+    
 };
 
 const game = () => {
-    createGrid();
+    createGrid(16,16);
 };
 
 game();
