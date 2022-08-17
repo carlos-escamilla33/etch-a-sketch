@@ -12,16 +12,18 @@ body {
     flex-direction: column;
     justify-content: space-around; 
     align-items: center; 
-    min-height: 100vh;
+    min-height: 90vh;
     margin: 0;
     padding: 0;
 }
 
 #game-container {
     display: grid;
-    grid-template-rows: repeat(var(--grid-rows), minmax(5px, 1fr));
-    grid-template-columns: repeat(var(--grid-columns), minmax(5px, 1fr));
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
     border: 0.3px black solid;
+    height: 500px;
+    width: 500px;
 }
 .square {
     border: 0.3px black solid;
@@ -29,12 +31,26 @@ body {
     width: auto;
 }
 
-#btn {
+.btn {
     border: none;
-    font-size: 20px;
     background-color: #94B49F;
     color: white;
-    border-radius: 20px;
     padding: 10px;
     cursor: pointer;
+    margin: 5px;
+}
+
+.sm {
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.md {
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.lg {
+    font-size: 30px;
+    border-radius: 30px;
 }
