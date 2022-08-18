@@ -1,9 +1,11 @@
 const gameContainer = document.querySelector("#game-container");
 const gridSizeBtns = document.querySelectorAll(".btn");
+let cols;
+let rows;
 
 const onHover = (event) => {
     if (event.target.className == "square") {
-        event.target.style.backgroundColor = "yellow";
+        event.target.style.backgroundColor = "purple";
     };
 };
 
@@ -19,11 +21,18 @@ const createGrid = (rows=16, cols=16) => {
 };
 
 const resizeGrid = (event) => {
-    
+    if (event.target.className === "btn sm"){
+        cols = 16, rows = 16;
+    } else if (event.target.className === "btn md") {
+        cols = 50, rows = 50;
+    } else if (event.target.className === "btn lg") {
+        cols = 100, rows = 100;
+    }
 };
 
 const game = () => {
-    createGrid(16,16);
+    // gridSizeBtns.forEach(btn => btn.addEventListener("click", createGrid));
+    createGrid();
 };
 
 game();
