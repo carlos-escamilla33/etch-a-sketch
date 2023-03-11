@@ -15,7 +15,7 @@ body {
     min-height: 90vh;
     margin: 0;
     padding: 0;
-    background-color: #002B5B;
+    background-color: #BDCDD6;
 }
 
 #game-container {
@@ -32,11 +32,13 @@ body {
     border: 0.3px black solid;
     text-align:center;
     width: auto;
+    cursor: pointer;
+
 }
 
 .btn {
     border: none;
-    background-color: #2B4865;
+    background-color: #6096B4;
     color: white;
     padding: 10px;
     cursor: pointer;
