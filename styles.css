@@ -10,12 +10,42 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
+    justify-content: center; 
     align-items: center; 
     min-height: 90vh;
     margin: 0;
     padding: 0;
-    background-color: #BDCDD6;
+    background-color: white;
+}
+
+#title-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 90%;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 45px;
+    font-family: cursive;
+    color: gold;
+}
+
+#etch-a-sketch {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 650px;
+    background: red;
+    border-radius: 8%;
+    margin-top: 0px;
+    padding-top: 0px;
+    border: solid black;
 }
 
 #game-container {
@@ -23,11 +53,41 @@ body {
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-columns), 1fr);
     border: 0.3px black solid;
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: solid black;
 }
+
+#btn-container {
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    height: 3%;
+    width: 90%;
+}
+
+.dummy {
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+    background-color: white;
+    height: 93px;
+    width: 93px;
+    border-radius: 100%;
+}
+
+.tester {
+    background-color: white;
+    border: solid black;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
 .square {
     border: 0.3px black solid;
     text-align:center;
@@ -38,7 +98,7 @@ body {
 
 .btn {
     border: none;
-    background-color: #6096B4;
+    background-color: #F7F5EB;
     color: white;
     padding: 10px;
     cursor: pointer;

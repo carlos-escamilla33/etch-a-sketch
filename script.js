@@ -5,7 +5,7 @@ let rows;
 
 const onHoverSizeBtns = (event) => {
     if (event.target.className == "square") {
-        event.target.style.backgroundColor = "pink";
+        event.target.style.backgroundColor = "black";
     };
 };
 
