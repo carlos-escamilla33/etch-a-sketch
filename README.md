@@ -1,7 +1,6 @@
 # Etch-a-Sketch
 
-This is a simple web application that mimics the functionality of the classic toy, Etch A Sketch. Users can draw simple line drawings on a gray canvas by using the arrow keys to move the cursor and pressing the space bar to shake the canvas and start over.
-
+This is a simple web application that mimics the functionality of the classic toy, Etch A Sketch. Users can draw simple line drawings on a white canvas by using their cursor to move and create works of art.
 ## Demo
 
 [Click here](https://carlos-escamilla33.github.io/etch-a-sketch/) to see a live demo of the app.
