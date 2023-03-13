@@ -17,6 +17,8 @@ const resizeGrid = (event) => {
         cols = 32, rows = 32;
     } else if (event.target.className === "btn lg") {
         cols = 64, rows = 64;
+    } else {
+        cols = 0; rows = 0;
     }
     createGrid(rows, cols);
 };
