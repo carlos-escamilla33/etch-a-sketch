@@ -4,7 +4,7 @@ This is a simple web application that mimics the functionality of the classic to
 
 ## Demo
 
-[Click here](https://pip.pypa.io/en/stable/) to see a live demo of the app.
+[Click here](https://carlos-escamilla33.github.io/etch-a-sketch/) to see a live demo of the app.
 
 ## Installation
 
